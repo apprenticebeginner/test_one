@@ -1,3 +1,17 @@
+You have the file sums.txt. It has several lines, each of them containing two positive numbers separated by a whitespace.
+For example:
+9 61
+15 47
+2 1
+Your program should read this file and print the sum of numbers on each line. So, if the file has n lines, you should print n sums, each on a separate line
+
+a = open("sums.txt", "r")
+for x in a:
+    print(int(x.split()[0]) + int(x.split()[1]))
+a.close()
+
+
+
 #prime numbers
 n = int(input())
 a = 2
