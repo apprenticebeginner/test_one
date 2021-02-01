@@ -1,3 +1,12 @@
+import time
+out2 = open('planets.txt', 'w')
+for i in range(3):
+    print(i, file=out2, flush=True)
+    # the numbers are immediately written in the file
+    time.sleep(5)
+out2.close()
+
+
 You have the file sums.txt. It has several lines, each of them containing two positive numbers separated by a whitespace.
 For example:
 9 61
